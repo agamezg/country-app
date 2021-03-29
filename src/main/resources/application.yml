@@ -1,0 +1,4 @@
+rest:
+  client:
+    default:
+      timeout: 1000

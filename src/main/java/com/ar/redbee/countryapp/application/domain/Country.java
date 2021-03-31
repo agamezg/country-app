@@ -1,4 +1,4 @@
-package com.ar.redbee.countryapp.domain;
+package com.ar.redbee.countryapp.application.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;

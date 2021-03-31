@@ -1,11 +1,8 @@
-package com.ar.redbee.countryapp.repository;
+package com.ar.redbee.countryapp.adapter.rest;
 
-import com.ar.redbee.countryapp.domain.Country;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.databind.PropertyNamingStrategy;
-import com.fasterxml.jackson.databind.annotation.JsonNaming;
-import lombok.Builder;
-import lombok.Data;
+import com.ar.redbee.countryapp.application.domain.Country;
+import com.ar.redbee.countryapp.application.port.out.CountryRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestTemplate;
 
@@ -14,12 +11,13 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class CountryRepository {
+@Slf4j
+public class CountryRestAdapter implements CountryRepository {
 
     private final RestTemplate restTemplate;
     private final static String ES_COUNTRIES = "https://restcountries.eu/rest/v2/lang/es";
 
-    public CountryRepository(RestTemplate restTemplate) {
+    public CountryRestAdapter(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
 

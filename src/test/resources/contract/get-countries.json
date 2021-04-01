@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Argentina",
+    "alpha2code": "AR",
+    "alpha3code": "ARG",
+    "capital": "Buenos Aires"
+  },
+  {
+    "name": "Belize",
+    "alpha2code": "BZ",
+    "alpha3code": "BLZ",
+    "capital": "Belmopan"
+  },
+  {
+    "name": "Bolivia (Plurinational State of)",
+    "alpha2code": "BO",
+    "alpha3code": "BOL",
+    "capital": "Sucre"
+  },
+  {
+    "name": "Chile",
+    "alpha2code": "CL",
+    "alpha3code": "CHL",
+    "capital": "Santiago"
+  },
+  {
+    "name": "Colombia",
+    "alpha2code": "CO",
+    "alpha3code": "COL",
+    "capital": "Bogotá"
+  },
+  {
+    "name": "Costa Rica",
+    "alpha2code": "CR",
+    "alpha3code": "CRI",
+    "capital": "San José"
+  },
+  {
+    "name": "Cuba",
+    "alpha2code": "CU",
+    "alpha3code": "CUB",
+    "capital": "Havana"
+  }
+]

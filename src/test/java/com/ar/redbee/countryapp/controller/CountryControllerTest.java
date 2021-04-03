@@ -12,7 +12,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
 import org.springframework.core.io.DefaultResourceLoader;
-import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.util.FileCopyUtils;
@@ -22,11 +21,11 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
+import static com.ar.redbee.countryapp.util.StubsFactory.buildCountriesList;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -36,6 +35,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @Import(TestConfig.class)
 @DisplayName("Specification for the CountryController")
 public class CountryControllerTest {
+
     @Autowired
     private MockMvc mockMvc;
     @Autowired
@@ -48,7 +48,7 @@ public class CountryControllerTest {
     @DisplayName("When the GET /countries endpoint is called " +
             "then should return the list of the countries")
     void ifTheGetCountriesIsCalledThenShouldReturnAListOfCountries() throws Exception {
-        final var expectedResponse = buildExpectedResponse();
+        final var expectedResponse = buildCountriesList();
 
         when(countryService.getCountries()).thenReturn(expectedResponse);
 
@@ -59,53 +59,6 @@ public class CountryControllerTest {
                 .andExpect(content().json(objectMapper.writeValueAsString(expectedResponse)));
 
         verify(countryService, times(1)).getCountries();
-    }
-
-    private List<Country> buildExpectedResponse() {
-        return List.of(
-                Country.builder()
-                        .name("Argentina")
-                        .alpha2Code("AR")
-                        .alpha3Code("ARG")
-                        .capital("Buenos Aires")
-                        .build(),
-                Country.builder()
-                        .name("Belize")
-                        .alpha2Code("BZ")
-                        .alpha3Code("BLZ")
-                        .capital("Belmopan")
-                        .build(),
-                Country.builder()
-                        .name("Bolivia (Plurinational State of)")
-                        .alpha2Code("BO")
-                        .alpha3Code("BOL")
-                        .capital("Sucre")
-                        .build(),
-                Country.builder()
-                        .name("Chile")
-                        .alpha2Code("CL")
-                        .alpha3Code("CHL")
-                        .capital("Santiago")
-                        .build(),
-                Country.builder()
-                        .name("Colombia")
-                        .alpha2Code("CO")
-                        .alpha3Code("COL")
-                        .capital("Bogotá")
-                        .build(),
-                Country.builder()
-                        .name("Costa Rica")
-                        .alpha2Code("CR")
-                        .alpha3Code("CRI")
-                        .capital("San José")
-                        .build(),
-                Country.builder()
-                        .name("Cuba")
-                        .alpha2Code("CU")
-                        .alpha3Code("CUB")
-                        .capital("Havana")
-                        .build()
-        );
     }
 
     private String loadJson(String path) throws IOException {

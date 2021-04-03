@@ -23,9 +23,9 @@ public class CountryController {
 
     @GetMapping("/countries")
     ResponseEntity<List<Country>> getCountries(){
-        log.info("Calling GET -> /countries");
+        log.info("Llamando al endpoint GET -> /countries");
         final var countries =  countryService.getCountries();
-        log.info("Countries found: {}", countries.size());
+        log.info("Países encontrados: {}", countries.size());
         return ResponseEntity.ok(countries);
     }
 }

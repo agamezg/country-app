@@ -28,5 +28,4 @@ public class AppConfig {
                 .requestFactory(() -> new BufferingClientHttpRequestFactory(new SimpleClientHttpRequestFactory()))
                 .build();
     }
-
 }

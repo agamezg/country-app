@@ -1,6 +1,6 @@
 package com.ar.redbee.countryapp.adapter.controller;
 
-import com.ar.redbee.countryapp.application.domain.Country;
+import com.ar.redbee.countryapp.domain.Country;
 import com.ar.redbee.countryapp.application.port.in.GetCountriesQuery;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;

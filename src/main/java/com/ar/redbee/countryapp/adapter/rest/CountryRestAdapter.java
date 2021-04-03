@@ -1,6 +1,6 @@
 package com.ar.redbee.countryapp.adapter.rest;
 
-import com.ar.redbee.countryapp.application.domain.Country;
+import com.ar.redbee.countryapp.domain.Country;
 import com.ar.redbee.countryapp.application.port.out.CountryRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;

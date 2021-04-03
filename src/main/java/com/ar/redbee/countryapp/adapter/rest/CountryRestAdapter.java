@@ -26,4 +26,4 @@ public class CountryRestAdapter implements CountryRepository {
                 .map(List::of)
                 .orElse(List.of());
     }
-}
+

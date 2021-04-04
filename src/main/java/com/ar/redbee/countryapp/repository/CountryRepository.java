@@ -2,6 +2,7 @@ package com.ar.redbee.countryapp.repository;
 
 import com.ar.redbee.countryapp.domain.Country;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestTemplate;
 
@@ -16,6 +17,7 @@ public class CountryRepository {
     public final static String ES_COUNTRIES = "https://restcountries.eu/rest/v2/lang/es";
     private final RestTemplate restTemplate;
 
+    @Autowired
     public CountryRepository(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }

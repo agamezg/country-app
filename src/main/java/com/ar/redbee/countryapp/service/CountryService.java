@@ -2,6 +2,7 @@ package com.ar.redbee.countryapp.service;
 
 import com.ar.redbee.countryapp.domain.Country;
 import com.ar.redbee.countryapp.repository.CountryRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,6 +12,7 @@ public class CountryService {
 
     private final CountryRepository countryRepository;
 
+    @Autowired
     public CountryService(CountryRepository countryRepository) {
         this.countryRepository = countryRepository;
     }

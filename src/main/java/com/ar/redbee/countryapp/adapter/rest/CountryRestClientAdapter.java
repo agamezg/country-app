@@ -12,15 +12,16 @@ import java.util.Optional;
 
 @Repository
 @Slf4j
-public class CountryRestAdapter implements CountryRepository {
+public class CountryRestClientAdapter implements CountryRepository {
 
     private final RestTemplate restTemplate;
     private final static String ES_COUNTRIES = "https://restcountries.eu/rest/v2/lang/es";
 
-    public CountryRestAdapter(RestTemplate restTemplate) {
+    public CountryRestClientAdapter(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
 
+    @Override
     public List<Country> getCountries() {
         return Optional.ofNullable(restTemplate.getForEntity(URI.create(ES_COUNTRIES), Country[].class).getBody())
                 .map(List::of)

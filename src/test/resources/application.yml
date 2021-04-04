@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: country-app
+  main:
+    allow-bean-definition-overriding: true
+
+rest:
+  client:
+    default:
+      timeout: 10000

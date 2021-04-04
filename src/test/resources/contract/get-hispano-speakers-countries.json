@@ -1,0 +1,616 @@
+[
+  {
+    "name": "Argentina",
+    "topLevelDomain": [
+      ".ar"
+    ],
+    "alpha2Code": "AR",
+    "alpha3Code": "ARG",
+    "callingCodes": [
+      "54"
+    ],
+    "capital": "Buenos Aires",
+    "altSpellings": [
+      "AR",
+      "Argentine Republic",
+      "República Argentina"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 43590400,
+    "latlng": [
+      -34,
+      -64
+    ],
+    "demonym": "Argentinean",
+    "area": 2780400,
+    "gini": 44.5,
+    "timezones": [
+      "UTC-03:00"
+    ],
+    "borders": [
+      "BOL",
+      "BRA",
+      "CHL",
+      "PRY",
+      "URY"
+    ],
+    "nativeName": "Argentina",
+    "numericCode": "032",
+    "currencies": [
+      {
+        "code": "ARS",
+        "name": "Argentine peso",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "es",
+        "iso639_2": "spa",
+        "name": "Spanish",
+        "nativeName": "Español"
+      },
+      {
+        "iso639_1": "gn",
+        "iso639_2": "grn",
+        "name": "Guaraní",
+        "nativeName": "Avañe'ẽ"
+      }
+    ],
+    "translations": {
+      "de": "Argentinien",
+      "es": "Argentina",
+      "fr": "Argentine",
+      "ja": "アルゼンチン",
+      "it": "Argentina",
+      "br": "Argentina",
+      "pt": "Argentina",
+      "nl": "Argentinië",
+      "hr": "Argentina",
+      "fa": "آرژانتین"
+    },
+    "flag": "https://restcountries.eu/data/arg.svg",
+    "regionalBlocs": [
+      {
+        "acronym": "USAN",
+        "name": "Union of South American Nations",
+        "otherAcronyms": [
+          "UNASUR",
+          "UNASUL",
+          "UZAN"
+        ],
+        "otherNames": [
+          "Unión de Naciones Suramericanas",
+          "União de Nações Sul-Americanas",
+          "Unie van Zuid-Amerikaanse Naties",
+          "South American Union"
+        ]
+      }
+    ],
+    "cioc": "ARG"
+  },
+  {
+    "name": "Belize",
+    "topLevelDomain": [
+      ".bz"
+    ],
+    "alpha2Code": "BZ",
+    "alpha3Code": "BLZ",
+    "callingCodes": [
+      "501"
+    ],
+    "capital": "Belmopan",
+    "altSpellings": [
+      "BZ"
+    ],
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 370300,
+    "latlng": [
+      17.25,
+      -88.75
+    ],
+    "demonym": "Belizean",
+    "area": 22966,
+    "gini": 53.1,
+    "timezones": [
+      "UTC-06:00"
+    ],
+    "borders": [
+      "GTM",
+      "MEX"
+    ],
+    "nativeName": "Belize",
+    "numericCode": "084",
+    "currencies": [
+      {
+        "code": "BZD",
+        "name": "Belize dollar",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "en",
+        "iso639_2": "eng",
+        "name": "English",
+        "nativeName": "English"
+      },
+      {
+        "iso639_1": "es",
+        "iso639_2": "spa",
+        "name": "Spanish",
+        "nativeName": "Español"
+      }
+    ],
+    "translations": {
+      "de": "Belize",
+      "es": "Belice",
+      "fr": "Belize",
+      "ja": "ベリーズ",
+      "it": "Belize",
+      "br": "Belize",
+      "pt": "Belize",
+      "nl": "Belize",
+      "hr": "Belize",
+      "fa": "بلیز"
+    },
+    "flag": "https://restcountries.eu/data/blz.svg",
+    "regionalBlocs": [
+      {
+        "acronym": "CARICOM",
+        "name": "Caribbean Community",
+        "otherAcronyms": [],
+        "otherNames": [
+          "Comunidad del Caribe",
+          "Communauté Caribéenne",
+          "Caribische Gemeenschap"
+        ]
+      },
+      {
+        "acronym": "CAIS",
+        "name": "Central American Integration System",
+        "otherAcronyms": [
+          "SICA"
+        ],
+        "otherNames": [
+          "Sistema de la Integración Centroamericana,"
+        ]
+      }
+    ],
+    "cioc": "BIZ"
+  },
+  {
+    "name": "Bolivia (Plurinational State of)",
+    "topLevelDomain": [
+      ".bo"
+    ],
+    "alpha2Code": "BO",
+    "alpha3Code": "BOL",
+    "callingCodes": [
+      "591"
+    ],
+    "capital": "Sucre",
+    "altSpellings": [
+      "BO",
+      "Buliwya",
+      "Wuliwya",
+      "Plurinational State of Bolivia",
+      "Estado Plurinacional de Bolivia",
+      "Buliwya Mamallaqta",
+      "Wuliwya Suyu",
+      "Tetã Volívia"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 10985059,
+    "latlng": [
+      -17,
+      -65
+    ],
+    "demonym": "Bolivian",
+    "area": 1098581,
+    "gini": 56.3,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "borders": [
+      "ARG",
+      "BRA",
+      "CHL",
+      "PRY",
+      "PER"
+    ],
+    "nativeName": "Bolivia",
+    "numericCode": "068",
+    "currencies": [
+      {
+        "code": "BOB",
+        "name": "Bolivian boliviano",
+        "symbol": "Bs."
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "es",
+        "iso639_2": "spa",
+        "name": "Spanish",
+        "nativeName": "Español"
+      },
+      {
+        "iso639_1": "ay",
+        "iso639_2": "aym",
+        "name": "Aymara",
+        "nativeName": "aymar aru"
+      },
+      {
+        "iso639_1": "qu",
+        "iso639_2": "que",
+        "name": "Quechua",
+        "nativeName": "Runa Simi"
+      }
+    ],
+    "translations": {
+      "de": "Bolivien",
+      "es": "Bolivia",
+      "fr": "Bolivie",
+      "ja": "ボリビア多民族国",
+      "it": "Bolivia",
+      "br": "Bolívia",
+      "pt": "Bolívia",
+      "nl": "Bolivia",
+      "hr": "Bolivija",
+      "fa": "بولیوی"
+    },
+    "flag": "https://restcountries.eu/data/bol.svg",
+    "regionalBlocs": [
+      {
+        "acronym": "USAN",
+        "name": "Union of South American Nations",
+        "otherAcronyms": [
+          "UNASUR",
+          "UNASUL",
+          "UZAN"
+        ],
+        "otherNames": [
+          "Unión de Naciones Suramericanas",
+          "União de Nações Sul-Americanas",
+          "Unie van Zuid-Amerikaanse Naties",
+          "South American Union"
+        ]
+      }
+    ],
+    "cioc": "BOL"
+  },
+  {
+    "name": "Chile",
+    "topLevelDomain": [
+      ".cl"
+    ],
+    "alpha2Code": "CL",
+    "alpha3Code": "CHL",
+    "callingCodes": [
+      "56"
+    ],
+    "capital": "Santiago",
+    "altSpellings": [
+      "CL",
+      "Republic of Chile",
+      "República de Chile"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 18191900,
+    "latlng": [
+      -30,
+      -71
+    ],
+    "demonym": "Chilean",
+    "area": 756102,
+    "gini": 52.1,
+    "timezones": [
+      "UTC-06:00",
+      "UTC-04:00"
+    ],
+    "borders": [
+      "ARG",
+      "BOL",
+      "PER"
+    ],
+    "nativeName": "Chile",
+    "numericCode": "152",
+    "currencies": [
+      {
+        "code": "CLP",
+        "name": "Chilean peso",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "es",
+        "iso639_2": "spa",
+        "name": "Spanish",
+        "nativeName": "Español"
+      }
+    ],
+    "translations": {
+      "de": "Chile",
+      "es": "Chile",
+      "fr": "Chili",
+      "ja": "チリ",
+      "it": "Cile",
+      "br": "Chile",
+      "pt": "Chile",
+      "nl": "Chili",
+      "hr": "Čile",
+      "fa": "شیلی"
+    },
+    "flag": "https://restcountries.eu/data/chl.svg",
+    "regionalBlocs": [
+      {
+        "acronym": "PA",
+        "name": "Pacific Alliance",
+        "otherAcronyms": [],
+        "otherNames": [
+          "Alianza del Pacífico"
+        ]
+      },
+      {
+        "acronym": "USAN",
+        "name": "Union of South American Nations",
+        "otherAcronyms": [
+          "UNASUR",
+          "UNASUL",
+          "UZAN"
+        ],
+        "otherNames": [
+          "Unión de Naciones Suramericanas",
+          "União de Nações Sul-Americanas",
+          "Unie van Zuid-Amerikaanse Naties",
+          "South American Union"
+        ]
+      }
+    ],
+    "cioc": "CHI"
+  },
+  {
+    "name": "Colombia",
+    "topLevelDomain": [
+      ".co"
+    ],
+    "alpha2Code": "CO",
+    "alpha3Code": "COL",
+    "callingCodes": [
+      "57"
+    ],
+    "capital": "Bogotá",
+    "altSpellings": [
+      "CO",
+      "Republic of Colombia",
+      "República de Colombia"
+    ],
+    "region": "Americas",
+    "subregion": "South America",
+    "population": 48759958,
+    "latlng": [
+      4,
+      -72
+    ],
+    "demonym": "Colombian",
+    "area": 1141748,
+    "gini": 55.9,
+    "timezones": [
+      "UTC-05:00"
+    ],
+    "borders": [
+      "BRA",
+      "ECU",
+      "PAN",
+      "PER",
+      "VEN"
+    ],
+    "nativeName": "Colombia",
+    "numericCode": "170",
+    "currencies": [
+      {
+        "code": "COP",
+        "name": "Colombian peso",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "es",
+        "iso639_2": "spa",
+        "name": "Spanish",
+        "nativeName": "Español"
+      }
+    ],
+    "translations": {
+      "de": "Kolumbien",
+      "es": "Colombia",
+      "fr": "Colombie",
+      "ja": "コロンビア",
+      "it": "Colombia",
+      "br": "Colômbia",
+      "pt": "Colômbia",
+      "nl": "Colombia",
+      "hr": "Kolumbija",
+      "fa": "کلمبیا"
+    },
+    "flag": "https://restcountries.eu/data/col.svg",
+    "regionalBlocs": [
+      {
+        "acronym": "PA",
+        "name": "Pacific Alliance",
+        "otherAcronyms": [],
+        "otherNames": [
+          "Alianza del Pacífico"
+        ]
+      },
+      {
+        "acronym": "USAN",
+        "name": "Union of South American Nations",
+        "otherAcronyms": [
+          "UNASUR",
+          "UNASUL",
+          "UZAN"
+        ],
+        "otherNames": [
+          "Unión de Naciones Suramericanas",
+          "União de Nações Sul-Americanas",
+          "Unie van Zuid-Amerikaanse Naties",
+          "South American Union"
+        ]
+      }
+    ],
+    "cioc": "COL"
+  },
+  {
+    "name": "Costa Rica",
+    "topLevelDomain": [
+      ".cr"
+    ],
+    "alpha2Code": "CR",
+    "alpha3Code": "CRI",
+    "callingCodes": [
+      "506"
+    ],
+    "capital": "San José",
+    "altSpellings": [
+      "CR",
+      "Republic of Costa Rica",
+      "República de Costa Rica"
+    ],
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 4890379,
+    "latlng": [
+      10,
+      -84
+    ],
+    "demonym": "Costa Rican",
+    "area": 51100,
+    "gini": 50.7,
+    "timezones": [
+      "UTC-06:00"
+    ],
+    "borders": [
+      "NIC",
+      "PAN"
+    ],
+    "nativeName": "Costa Rica",
+    "numericCode": "188",
+    "currencies": [
+      {
+        "code": "CRC",
+        "name": "Costa Rican colón",
+        "symbol": "₡"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "es",
+        "iso639_2": "spa",
+        "name": "Spanish",
+        "nativeName": "Español"
+      }
+    ],
+    "translations": {
+      "de": "Costa Rica",
+      "es": "Costa Rica",
+      "fr": "Costa Rica",
+      "ja": "コスタリカ",
+      "it": "Costa Rica",
+      "br": "Costa Rica",
+      "pt": "Costa Rica",
+      "nl": "Costa Rica",
+      "hr": "Kostarika",
+      "fa": "کاستاریکا"
+    },
+    "flag": "https://restcountries.eu/data/cri.svg",
+    "regionalBlocs": [
+      {
+        "acronym": "CAIS",
+        "name": "Central American Integration System",
+        "otherAcronyms": [
+          "SICA"
+        ],
+        "otherNames": [
+          "Sistema de la Integración Centroamericana,"
+        ]
+      }
+    ],
+    "cioc": "CRC"
+  },
+  {
+    "name": "Cuba",
+    "topLevelDomain": [
+      ".cu"
+    ],
+    "alpha2Code": "CU",
+    "alpha3Code": "CUB",
+    "callingCodes": [
+      "53"
+    ],
+    "capital": "Havana",
+    "altSpellings": [
+      "CU",
+      "Republic of Cuba",
+      "República de Cuba"
+    ],
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "population": 11239004,
+    "latlng": [
+      21.5,
+      -80
+    ],
+    "demonym": "Cuban",
+    "area": 109884,
+    "gini": null,
+    "timezones": [
+      "UTC-05:00"
+    ],
+    "borders": [],
+    "nativeName": "Cuba",
+    "numericCode": "192",
+    "currencies": [
+      {
+        "code": "CUC",
+        "name": "Cuban convertible peso",
+        "symbol": "$"
+      },
+      {
+        "code": "CUP",
+        "name": "Cuban peso",
+        "symbol": "$"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "es",
+        "iso639_2": "spa",
+        "name": "Spanish",
+        "nativeName": "Español"
+      }
+    ],
+    "translations": {
+      "de": "Kuba",
+      "es": "Cuba",
+      "fr": "Cuba",
+      "ja": "キューバ",
+      "it": "Cuba",
+      "br": "Cuba",
+      "pt": "Cuba",
+      "nl": "Cuba",
+      "hr": "Kuba",
+      "fa": "کوبا"
+    },
+    "flag": "https://restcountries.eu/data/cub.svg",
+    "regionalBlocs": [],
+    "cioc": "CUB"
+  }
+]

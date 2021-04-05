@@ -1,5 +1,7 @@
 package com.ar.redbee.countryapp.adapter.controller;
 
+import com.ar.redbee.countryapp.adapter.controller.mapper.CountryMapper;
+import com.ar.redbee.countryapp.adapter.controller.model.CountryRest;
 import com.ar.redbee.countryapp.domain.Country;
 import com.ar.redbee.countryapp.application.port.in.GetCountriesQuery;
 import lombok.extern.slf4j.Slf4j;
@@ -25,10 +27,14 @@ public class CountryController {
     }
 
     @GetMapping("/countries")
-    ResponseEntity<List<Country>> getCountries() {
+    ResponseEntity<List<CountryRest>> getCountries() {
+
         log.info("Calling GET -> /countries");
         final var countries = getCountriesQuery.execute();
         log.info("Countries found: {}", countries.size());
-        return ResponseEntity.ok(countries);
+
+        var countriesRest = CountryMapper.of(countries);
+
+        return ResponseEntity.ok(countriesRest);
     }
 }

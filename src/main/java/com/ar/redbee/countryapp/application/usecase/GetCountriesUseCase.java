@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@UseCase
+@Component
 public class GetCountriesUseCase implements GetCountriesQuery {
 
     private final CountryRepository countryRepository;

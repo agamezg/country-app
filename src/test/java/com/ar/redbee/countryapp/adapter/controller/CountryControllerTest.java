@@ -22,6 +22,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
+@AutoConfigureMockMvc
 @Import(TestConfig.class)
 public class CountryControllerTest {
 
@@ -34,6 +35,7 @@ public class CountryControllerTest {
 
     @Test
     void ifTheGetCountriesIsCalledThenShouldReturnAListOfCountries() throws Exception {
+        final var expectedRestResponse = StubsFactory.buildCountriesRestList();
         final var expectedResponse = StubsFactory.buildCountriesList();
 
         when(getCountriesQuery.execute()).thenReturn(expectedResponse);
@@ -42,7 +44,7 @@ public class CountryControllerTest {
                 .contentType(MediaType.APPLICATION_JSON))
                 .andDo(print())
                 .andExpect(status().isOk())
-                .andExpect(content().json(objectMapper.writeValueAsString(expectedResponse)));
+                .andExpect(content().json(objectMapper.writeValueAsString(expectedRestResponse)));
 
         verify(getCountriesQuery).execute();
     }

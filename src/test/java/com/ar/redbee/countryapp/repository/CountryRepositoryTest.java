@@ -17,6 +17,7 @@ import java.nio.charset.StandardCharsets;
 
 import static com.ar.redbee.countryapp.repository.CountryRepository.ES_COUNTRIES;
 import static com.ar.redbee.countryapp.util.StubsFactory.buildCountriesList;
+import static com.ar.redbee.countryapp.util.StubsFactory.loadJson;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
@@ -44,12 +45,5 @@ public class CountryRepositoryTest {
         final var actualResponse = countryRepository.getCountries();
 
         assertEquals(expectedRepositoryResponse, actualResponse);
-    }
-
-    private String loadJson(String path) throws IOException {
-        final var resourceLoader = new DefaultResourceLoader();
-        final var resource = resourceLoader.getResource(path);
-        final var reader = new InputStreamReader(resource.getInputStream(), StandardCharsets.UTF_8.name());
-        return FileCopyUtils.copyToString(reader);
     }
 }

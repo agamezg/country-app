@@ -1,7 +1,12 @@
 package com.ar.redbee.countryapp.util;
 
 import com.ar.redbee.countryapp.domain.Country;
+import org.springframework.core.io.DefaultResourceLoader;
+import org.springframework.util.FileCopyUtils;
 
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 public final class StubsFactory {
@@ -51,5 +56,12 @@ public final class StubsFactory {
                         .capital("Havana")
                         .build()
         );
+    }
+
+    public static String loadJson(String path) throws IOException {
+        final var resourceLoader = new DefaultResourceLoader();
+        final var resource = resourceLoader.getResource(path);
+        final var reader = new InputStreamReader(resource.getInputStream(), StandardCharsets.UTF_8.name());
+        return FileCopyUtils.copyToString(reader);
     }
 }

@@ -4,6 +4,7 @@ import com.ar.redbee.countryapp.adapter.rest.model.CountryApiModel;
 import com.ar.redbee.countryapp.application.port.out.CountryRepository;
 import com.ar.redbee.countryapp.domain.Country;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestTemplate;
 
@@ -18,13 +19,14 @@ public class CountryRestClientAdapter implements CountryRepository {
     private final RestTemplate restTemplate;
     private final static String ES_COUNTRIES = "https://restcountries.eu/rest/v2/lang/es";
 
+    @Autowired
     public CountryRestClientAdapter(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
 
     @Override
     public List<Country> getCountries() {
-        log.info("Calling country api: {}", ES_COUNTRIES);
+        log.info("Llamando a la api de países: {}", ES_COUNTRIES);
         return Optional.ofNullable(restTemplate.getForObject(ES_COUNTRIES, CountryApiModel[].class))
                 .map(List::of)
                 .orElse(List.of())

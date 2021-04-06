@@ -24,7 +24,7 @@ public class CountryRepository {
 
     public List<Country> getCountries() {
         log.info("Se procede a buscar países de habla hispana {}", ES_COUNTRIES);
-        return Optional.ofNullable(restTemplate.getForEntity(URI.create(ES_COUNTRIES), Country[].class).getBody())
+        return Optional.ofNullable(restTemplate.getForObject(URI.create(ES_COUNTRIES), Country[].class))
                 .map(List::of)
                 .orElse(List.of());
     }

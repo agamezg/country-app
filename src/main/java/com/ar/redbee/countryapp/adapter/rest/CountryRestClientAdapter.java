@@ -1,7 +1,7 @@
 package com.ar.redbee.countryapp.adapter.rest;
 
 import com.ar.redbee.countryapp.adapter.rest.model.CountryApiModel;
-import com.ar.redbee.countryapp.application.port.out.CountryRepository;
+import com.ar.redbee.countryapp.application.port.out.CountryOutputPort;
 import com.ar.redbee.countryapp.domain.Country;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 
 @Repository
 @Slf4j
-public class CountryRestClientAdapter implements CountryRepository {
+public class CountryRestClientAdapter implements CountryOutputPort {
 
     private final RestTemplate restTemplate;
     private final static String ES_COUNTRIES = "https://restcountries.eu/rest/v2/lang/es";

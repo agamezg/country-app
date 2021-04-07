@@ -1,6 +1,6 @@
 package com.ar.redbee.countryapp.application.usecase;
 
-import com.ar.redbee.countryapp.application.port.out.CountryRepository;
+import com.ar.redbee.countryapp.application.port.out.CountryOutputPort;
 import com.ar.redbee.countryapp.util.StubsFactory;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -15,7 +15,7 @@ import static org.mockito.Mockito.when;
 public class GetCountriesUseCaseTest {
 
     @Mock
-    private CountryRepository countryRepository;
+    private CountryOutputPort countryOutputPort;
     @InjectMocks
     private GetCountriesUseCase getCountriesUseCase;
 
@@ -23,7 +23,7 @@ public class GetCountriesUseCaseTest {
     void ifTheExecuteIsCalledThenShouldRespondAListOfCountries() {
         final var expectedResponse = StubsFactory.buildCountriesList();
 
-        when(countryRepository.getCountries()).thenReturn(expectedResponse);
+        when(countryOutputPort.getCountries()).thenReturn(expectedResponse);
 
         final var actualResponse = getCountriesUseCase.execute();
 

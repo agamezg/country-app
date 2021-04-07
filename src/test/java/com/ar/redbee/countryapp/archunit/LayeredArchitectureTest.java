@@ -1,4 +1,5 @@
 package com.ar.redbee.countryapp.archunit;
+
 ;
 import com.tngtech.archunit.core.importer.ImportOption;
 import com.tngtech.archunit.junit.AnalyzeClasses;
@@ -13,7 +14,6 @@ public class LayeredArchitectureTest {
     private static final String ADAPTERS = "Adapters";
     private static final String APPLICATION = "Application";
     private static final String CONFIG = "Config";
-    private static final String EXTERNAL_LIBRARIES = "External";
 
     @ArchTest
     public static final ArchRule layer_dependencies_are_respected = Architectures.layeredArchitecture()
@@ -21,8 +21,7 @@ public class LayeredArchitectureTest {
             .layer(DOMAIN).definedBy("com.ar.redbee.countryapp.domain..")
             .layer(ADAPTERS).definedBy("com.ar.redbee.countryapp.adapter..")
             .layer(APPLICATION).definedBy("com.ar.redbee.countryapp.application..")
-            .layer(EXTERNAL_LIBRARIES).definedBy("com.ar.redbee..")
             .whereLayer(APPLICATION).mayOnlyBeAccessedByLayers(ADAPTERS, CONFIG)
             .whereLayer(ADAPTERS).mayOnlyBeAccessedByLayers(CONFIG)
-            .whereLayer(DOMAIN).mayOnlyBeAccessedByLayers(APPLICATION, ADAPTERS, CONFIG, EXTERNAL_LIBRARIES);
+            .whereLayer(DOMAIN).mayOnlyBeAccessedByLayers(APPLICATION, ADAPTERS, CONFIG);
 }

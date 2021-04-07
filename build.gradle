@@ -19,7 +19,8 @@ dependencies {
     // Lombok
     annotationProcessor 'org.projectlombok:lombok'
     implementation 'org.projectlombok:lombok'
-
+    implementation group: 'com.tngtech.archunit', name: 'archunit', version: '0.14.1'
+    implementation 'com.tngtech.archunit:archunit-junit5-engine:0.13.0'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
